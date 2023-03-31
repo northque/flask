@@ -1,15 +1,3 @@
-# Enter the directory of the cloned repo
-cd ~/flask
-
-# Look at the existing pipelines before we delete them
-ls .github/workflows/
-# Remove the existing pipelines
-rm .github/workflows/*.yaml
-
-# Create a new pipeline for the example application
-touch .github/workflows/flaskr-ci.yaml
-On the Instruqt toolbar, click on the "Code Editor" tab and browse to /root/flask/.github/workflows/flaskr-ci.yaml. The file should be empty to begin with. Paste the following pipeline code into the file:
-
 name: Build and Test
 on:
   push:
